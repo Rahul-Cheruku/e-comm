@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my add section</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div id="title" class="py-6 text-title-3 px-3 bg-gray-200">
+        <a href="/">
+            <i class="fa fa-arrow-left"></i>
+        </a>
+        <span>All your Add</span>
+    </div>
+    <div class="w-full">
+        <div id="card-holder" class="w-full items-center p-4 flex md:flex-row flex-col flex-wrap gap-5"></div>
+    </div>
+        
+
+
+        <script>
+        function BasicCard(){
+            return(
+                `
+                    <div class=" border-b border col-span-1 w-fit pb-3">
+                        <div class="font-semibold bg-gray-200 px-3 py-2">Book</div>
+                        <img class="border border-1" src="https://drive.google.com/thumbnail?id=1QmLb5slkNwPjQmmaKe3O3yxs-AE5ZmVw" alt="Card image cap">
+                        <div class="p-3 flex w-full justify-between">
+                            <h5>HC Verma</h5>
+                            <i class="fa fa-inr"> 300</i>
+                        </div>
+                        <span class="px-3">Pune</spam>
+                    </div>
+                `
+            )
+        }    
+        let finalPlaceHolder = ""
+        for(i=0;i<10;i++){
+            finalPlaceHolder = BasicCard() + "\n" + finalPlaceHolder;
+        }
+        document.getElementById("card-holder").innerHTML = finalPlaceHolder;
+        </script>
+
+</body>
+
+</html>
