@@ -12,6 +12,7 @@ const nameFocus = () => {
 }
 
 const emailFocus = () => {
+//     Getting id named by 'eamil'
     let email = document.getElementById('email')
     email.classList.add('handle-label')
 }
