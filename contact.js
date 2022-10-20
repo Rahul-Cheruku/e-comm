@@ -5,6 +5,7 @@
 // CREATED THIS FILE 
 
 const nameFocus = () => {
+//     Getting id named by 'name'
     let name = document.getElementById('name')
     name.classList.add('handle-label')
 
