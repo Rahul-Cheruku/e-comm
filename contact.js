@@ -3,6 +3,7 @@
 
 
 // CREATED THIS FILE 
+//refer rules repo on github
 
 const nameFocus = () => {
 //     Getting id named by 'name'
